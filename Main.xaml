@@ -1,0 +1,1148 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Models</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Services.Graph.Mail.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1531,17465" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="DelList">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\Users\RPA\Documents\UiPath\Monthly_SO_Balance_Report\Del_List</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NSAPLogon AttachMode="ByInstance" DisplayName="SAP Logon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="944,17442" sap2010:WorkflowViewState.IdRef="NSAPLogon_2" IsDisplayNameAuto="True" ScopeGuid="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V2">
+      <uix:NSAPLogon.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="910,17232" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSAPLogin Client="100" DisplayName="SAP Login" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="876,349" sap2010:WorkflowViewState.IdRef="NSAPLogin_1" Language="EN" Option="Single" Password="Rpa03@2025" Timeout="5000" Username="RPA03" Version="V4" />
+            <ucas:CallTransaction DisplayName="Call Transaction 'saplogon.exe SAP'" sap:VirtualizedContainerService.HintSize="876,192" sap2010:WorkflowViewState.IdRef="CallTransaction_1" Transaction="ZSUSD026">
+              <ucas:CallTransaction.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9a1b1f8c-60ec-4dae-b8b0-32d09f4f5168" InformativeScreenshot="1feaac1fec3a0f4c29b7fedc76120fd6" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  User Menu for RPA03' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ucas:CallTransaction.Target>
+            </ucas:CallTransaction>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="876,16629" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="842,16517" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="808,16457" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="From Email\\Template.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="774,16165" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="740,16105" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="706,15892" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="WBS" />
+                                      <Variable x:TypeArguments="x:String" Default="C:\Users\RPA\Documents\UiPath\Monthly_SO_Balance_Report\From SAP" Name="Filepath" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ReadCellValueX DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="672,191" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                                      <ueab:ReadCellValueX.Cell>
+                                        <InArgument x:TypeArguments="ue:IReadCellRef">
+                                          <CSharpValue x:TypeArguments="ue:IReadCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">CurrentRow.ByIndex[0]</CSharpValue>
+                                        </InArgument>
+                                      </ueab:ReadCellValueX.Cell>
+                                      <ueab:ReadCellValueX.SaveTo>
+                                        <OutArgument x:TypeArguments="x:String">
+                                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">WBS</CSharpReference>
+                                        </OutArgument>
+                                      </ueab:ReadCellValueX.SaveTo>
+                                    </ueab:ReadCellValueX>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="672,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace">
+                                      <ui:LogMessage.Message>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">WBS</CSharpValue>
+                                        </InArgument>
+                                      </ui:LogMessage.Message>
+                                    </ui:LogMessage>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SO'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="SH" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="eXXoe2X7gUCWdxTCNckywA" DesignTimeRectangle="262, 237, 34, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSP$00003-LOW' /&gt;" Guid="9c035248-ad29-4b94-a718-2d58ceead8ba" InformativeScreenshot="efe253b928d2b757515b851108dd8ca6.png" Reference="dcJtd2nba0mn3vCcE5zLxA/E1fmdDQocUW33hYaOWUnww" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Work Breakdo…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="Y0WD-BQxq0-_df4WLtjDYw" DesignTimeRectangle="262, 369, 132, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSP$00009-LOW' /&gt;" Guid="9c76ddcb-de89-47d5-af2b-10f5855ce68b" InformativeScreenshot="6b4d9c2420ce755315f778718e847c2c.png" Reference="dcJtd2nba0mn3vCcE5zLxA/1KRIOvin80C-KhiRMF0nGg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">WBS</CSharpValue>
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Execute (F8)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="20HwrEbClUqNprMCpLrQGA" DesignTimeRectangle="31, 113, 20, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[8]' /&gt;" Guid="106a1473-23e8-44d6-bd29-1105441545ac" InformativeScreenshot="977dd234c7a0daa92da932b3a897ad70.png" Reference="dcJtd2nba0mn3vCcE5zLxA/cZVdpcIm_kWcmNXSaiPDFg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SH'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="-smeygB2d0WHHXvJ1dZwYw" DesignTimeRectangle="187, 238, 38, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;sap colName='VKORG' id='usr/cntlCONTAINER/shellcont/shell' tableRow='18' /&gt;" Guid="a5a9b4f0-16d4-47d8-8b06-4fb9ac89f90c" InformativeScreenshot="0056bb40461b7f39f0a85c84ccf941e7.png" Reference="dcJtd2nba0mn3vCcE5zLxA/wXn4Wg60z0CemjQnjMJtBA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Spreadsheet...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CVScreenId="36f6ad01-7631-4723-a16b-a487982bb82c" ContentHash="moea2kocpkmQZb9b12Pt1Q" CvTextArea="27, 209, 81, 15" CvTextArgument="Spreadsheet.." CvType="Text" DesignTimeRectangle="3, 205, 184, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='14' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='14' role='menu item' check:text='Spreadsheet...' /&gt;" Guid="fce2197c-7de0-4351-bdb9-fef7aef4f2f6" InformativeScreenshot="c17b41209e217db7d610b15ae90cc366.png" Reference="dcJtd2nba0mn3vCcE5zLxA/xcQvDaUNm0a6ZtbtrNWTAg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export to...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="EjpmzkmX00yfHPTEbg3unA" DesignTimeRectangle="424, 157, 98, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[20]' /&gt;" Guid="2a69c898-3fcb-4635-9053-166e4918f8a5" InformativeScreenshot="6263bb395f2ae77afb41b7ad1baa4a9f.png" Reference="dcJtd2nba0mn3vCcE5zLxA/jkMRYwEbHEOQ9sg3JaB_Fg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTEMP'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="NAthP9ucM0yDcD80pup3_w" DesignTimeRectangle="87, 32, 370, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="0275c44b-06b8-4abc-ba34-fb4e0e0057c9" InformativeScreenshot="ee515a853925f59e15c52c858c4bca98.png" Reference="dcJtd2nba0mn3vCcE5zLxA/foOo4pOV0UyIkyo0AP_i1Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Filepath</CSharpValue>
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT_20250130_113051.…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="PFTpd1UnLkiG1SbXI_KcWg" DesignTimeRectangle="87, 54, 370, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="903ff3f5-f6c4-4136-bb82-39cdf4cfbb57" InformativeScreenshot="d662b8cc1b8c11a2f67bda7c2815f948.png" Reference="dcJtd2nba0mn3vCcE5zLxA/pEeaA3Vo6kuK6eAexLy_uw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">WBS+".XLSX"</CSharpValue>
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Replace'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="5qMH-ywhf0W61H-GMadRww" DesignTimeRectangle="369, 91, 56, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[11]' /&gt;" Guid="c9812617-97fa-4005-8025-b5a5ede1056b" InformativeScreenshot="46633879508107140eeacb1fc2d785e7.png" Reference="dcJtd2nba0mn3vCcE5zLxA/hYF4Ce1Iq065BBvzzi93mA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="672,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd(2)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="/NZA3SD002[k(Enter)]" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="DnU4ToMHEE2_QewUO5IO3A" DesignTimeRectangle="62, 51, 142, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="fde2974a-7056-4ed3-96f8-58653a0099df" InformativeScreenshot="e25578c783f6d02bbac2b693f2c347b7.png" Reference="dcJtd2nba0mn3vCcE5zLxA/pPlq1-Bz8ESa12J0Ru7odg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SO'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="SH" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="yD0YxXDgMkSCZeMSnnL4xw" DesignTimeRectangle="263, 259, 34, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtP_BUKRS' /&gt;" Guid="13d7a64f-d6ba-457d-87a9-5f21187b3cc2" InformativeScreenshot="210036f8afee272beeeb60176807abcd.png" Reference="dcJtd2nba0mn3vCcE5zLxA/lVdxE3u0z0GarxuSFllSRA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SO(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="SH" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="VnXOfE0300O5Ikx-k12H3w" DesignTimeRectangle="263, 347, 34, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_VSTEL-LOW' /&gt;" Guid="35a27e79-d64e-48fe-bbe3-27245aead436" InformativeScreenshot="1d90f45b87c62f4a638cbcbdb32786b6.png" Reference="dcJtd2nba0mn3vCcE5zLxA/SRtimZEapUiX9EFfp0g9BQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SH'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="SH" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="cNur77_xf06V3xKortH7zA" DesignTimeRectangle="263, 489, 34, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_VKORG-LOW' /&gt;" Guid="5909ef94-080d-4f4d-93bc-e427861aa671" InformativeScreenshot="b111f3b1a99fba25ee997e5f7a25543c.png" Reference="dcJtd2nba0mn3vCcE5zLxA/tIdr5jyEskquiexiSujacA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SO(2)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="TLO_AoKpyUi7lHFt6dcHHQ" DesignTimeRectangle="263, 835, 34, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_WERKS-LOW' /&gt;" Guid="1bbbc8b1-880f-48e2-9ace-33e92ae370f4" InformativeScreenshot="ea7bb966082941d6c1e7f89cff333c59.png" Reference="dcJtd2nba0mn3vCcE5zLxA/R4ZkXqcmpEmz_AoCudqBHw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '1101'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="1700" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="klY5Mi6ZYUqWgtY8IEkTww" DesignTimeRectangle="263, 875, 34, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_VKBUR-LOW' /&gt;" Guid="e200da32-448d-46bf-b86e-090ea19cb11c" InformativeScreenshot="bcf49a85b00fd680ba3b94dbbf64fb40.png" Reference="dcJtd2nba0mn3vCcE5zLxA/COwMjvNZ4E6HguxOBdnbyA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '111'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="170" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="a5uepfwTb0iY5pQE3X_UEQ" DesignTimeRectangle="263, 897, 27, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_VKGRP-LOW' /&gt;" Guid="050bf9bb-55da-4a87-a4ce-91e17f02b69a" InformativeScreenshot="c75b4ae5c6d097500d9e234ba88d42b8.png" Reference="dcJtd2nba0mn3vCcE5zLxA/rq_601nlbEqtQbudb2Ah7Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Work Breakdo…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="wPHFxmRE1UCa1grkZxN97A" DesignTimeRectangle="263, 345, 132, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_WBS-LOW' /&gt;" Guid="a0490d7f-ef52-4d2d-a659-56bed6ef5c17" InformativeScreenshot="d090c8a04207721176129041b71facdf.png" Reference="dcJtd2nba0mn3vCcE5zLxA/8kt9ky0uPEy3IEh_dyAw5Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">WBS</CSharpValue>
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Delivery list'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="Delivery List No Hierarchy[k(Enter)]" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="XQWSxRRsuU2tCbjU2KjZuA" DesignTimeRectangle="263, 181, 265, 20" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;sap id='usr/cmbP_SLPRF' /&gt;" Guid="65b7031b-468b-4d94-9bec-341ae7b0fa55" InformativeScreenshot="ffee2676b8e538b131d9137e88769129.png" Reference="dcJtd2nba0mn3vCcE5zLxA/V0Z0Bw0qLEOvVX2vJJfNLQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Execute (F8)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="YFLn65uzREWW04F7g0IIpg" DesignTimeRectangle="32, 123, 20, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[8]' /&gt;" Guid="148d2864-21ac-4200-99ee-6771e546cf6a" InformativeScreenshot="b2ba34e857476fe78fa0b9445b26a303.png" Reference="dcJtd2nba0mn3vCcE5zLxA/oSrH4pTqKUC1erSPoOn2XQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Delivery Monitor (Delivery List)' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
+                                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)d(shift)][k(f7)][u(shift)u(ctrl)][u(hk)]" Version="V4">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NKeyboardShortcuts>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export to...(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,57" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="PwhKNpXn8kSHZOuOtLt_DA" DesignTimeRectangle="424, 157, 98, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[20]' /&gt;" Guid="c4338dde-c8bd-4591-95d3-c16a49c382b6" InformativeScreenshot="81abeaa17da9d0bf1954cd2f0b8a6d0b.png" Reference="dcJtd2nba0mn3vCcE5zLxA/wdYqe0zJ1kuqo-Injxdasg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTEMP'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,250" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="NAthP9ucM0yDcD80pup3_w" DesignTimeRectangle="87, 32, 370, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="0275c44b-06b8-4abc-ba34-fb4e0e0057c9" InformativeScreenshot="ee515a853925f59e15c52c858c4bca98.png" Reference="dcJtd2nba0mn3vCcE5zLxA/foOo4pOV0UyIkyo0AP_i1Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">DelList</CSharpValue>
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'EXPORT_20250130_113051.…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,250" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable ContentHash="PFTpd1UnLkiG1SbXI_KcWg" DesignTimeRectangle="87, 54, 370, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="903ff3f5-f6c4-4136-bb82-39cdf4cfbb57" InformativeScreenshot="d662b8cc1b8c11a2f67bda7c2815f948.png" Reference="dcJtd2nba0mn3vCcE5zLxA/pEeaA3Vo6kuK6eAexLy_uw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.Text>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">WBS+"_Delivery_List.XLSX"</CSharpValue>
+                                        </InArgument>
+                                      </uix:NTypeInto.Text>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Replace'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="672,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="5qMH-ywhf0W61H-GMadRww" DesignTimeRectangle="369, 91, 56, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[11]' /&gt;" Guid="c9812617-97fa-4005-8025-b5a5ede1056b" InformativeScreenshot="46633879508107140eeacb1fc2d785e7.png" Reference="dcJtd2nba0mn3vCcE5zLxA/hYF4Ce1Iq065BBvzzi93mA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="672,11846" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="638,11763" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                                        <ueab:ExcelProcessScopeX.Body>
+                                          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,11653" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="570,122" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="570,11471" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None">
+                                                <ueab:ExcelApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,11179" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ueab:InsertSheetX DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="502,218" sap2010:WorkflowViewState.IdRef="InsertSheetX_1" Name="Delivery_List">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ueab:InsertSheetX.Workbook>
+                                                          <InArgument x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                            <CSharpValue x:TypeArguments="ue:IWorkbookQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">Excel</CSharpValue>
+                                                          </InArgument>
+                                                        </ueab:InsertSheetX.Workbook>
+                                                      </ueab:InsertSheetX>
+                                                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="502,624" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" SensitivityOperation="None">
+                                                        <ueab:ExcelApplicationCard.Body>
+                                                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Del" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,323" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ueab:CopyPasteRangeX DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,263" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="All" Transpose="False">
+                                                                <ueab:CopyPasteRangeX.DestinationRange>
+                                                                  <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                                    <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">Excel.Sheet["Delivery_List"]</CSharpValue>
+                                                                  </InArgument>
+                                                                </ueab:CopyPasteRangeX.DestinationRange>
+                                                                <ueab:CopyPasteRangeX.SourceRange>
+                                                                  <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                                                    <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_83">Del.Sheet["Sheet1"]</CSharpValue>
+                                                                  </InArgument>
+                                                                </ueab:CopyPasteRangeX.SourceRange>
+                                                              </ueab:CopyPasteRangeX>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </ueab:ExcelApplicationCard.Body>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ueab:ExcelApplicationCard.WorkbookPath>
+                                                          <InArgument x:TypeArguments="x:String">
+                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">"Del_List\\"+WBS+"_Delivery_List.XLSX"</CSharpValue>
+                                                          </InArgument>
+                                                        </ueab:ExcelApplicationCard.WorkbookPath>
+                                                      </ueab:ExcelApplicationCard>
+                                                      <ueab:FilterX ClearFilter="False" ColumnName="SaTy" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="502,201" sap2010:WorkflowViewState.IdRef="FilterX_3">
+                                                        <ueab:FilterX.FilterArgument>
+                                                          <ueabf:FilterArgument Mode="Advanced">
+                                                            <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                              <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                                                <ueabf:AdvancedFilterArgument.Condition1>
+                                                                  <ueabf:AdvancedFilterCondition Operator="NOTEQ" Value="ZS06" />
+                                                                </ueabf:AdvancedFilterArgument.Condition1>
+                                                                <ueabf:AdvancedFilterArgument.Condition2>
+                                                                  <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                                </ueabf:AdvancedFilterArgument.Condition2>
+                                                              </ueabf:AdvancedFilterArgument>
+                                                            </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                            <ueabf:FilterArgument.BasicFiltersArgument>
+                                                              <ueabf:BasicFilterArgument>
+                                                                <ueabf:BasicFilterArgument.BasicFilters>
+                                                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                                    <x:Null />
+                                                                  </scg:List>
+                                                                </ueabf:BasicFilterArgument.BasicFilters>
+                                                              </ueabf:BasicFilterArgument>
+                                                            </ueabf:FilterArgument.BasicFiltersArgument>
+                                                          </ueabf:FilterArgument>
+                                                        </ueab:FilterX.FilterArgument>
+                                                        <ueab:FilterX.Range>
+                                                          <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                            <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                          </InArgument>
+                                                        </ueab:FilterX.Range>
+                                                      </ueab:FilterX>
+                                                      <ueab:DeleteRowsX RowPositions="{x:Null}" DeleteRowsOption="Visible" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="502,170" sap2010:WorkflowViewState.IdRef="DeleteRowsX_2">
+                                                        <ueab:DeleteRowsX.Range>
+                                                          <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                            <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                          </InArgument>
+                                                        </ueab:DeleteRowsX.Range>
+                                                      </ueab:DeleteRowsX>
+                                                      <ueab:FilterX ClearFilter="True" ColumnName="SaTy" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="502,201" sap2010:WorkflowViewState.IdRef="FilterX_4">
+                                                        <ueab:FilterX.FilterArgument>
+                                                          <ueabf:FilterArgument Mode="Advanced">
+                                                            <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                              <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                                                <ueabf:AdvancedFilterArgument.Condition1>
+                                                                  <ueabf:AdvancedFilterCondition Operator="NOTEQ" Value="ZS06" />
+                                                                </ueabf:AdvancedFilterArgument.Condition1>
+                                                                <ueabf:AdvancedFilterArgument.Condition2>
+                                                                  <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                                </ueabf:AdvancedFilterArgument.Condition2>
+                                                              </ueabf:AdvancedFilterArgument>
+                                                            </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                            <ueabf:FilterArgument.BasicFiltersArgument>
+                                                              <ueabf:BasicFilterArgument>
+                                                                <ueabf:BasicFilterArgument.BasicFilters>
+                                                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                                    <x:Null />
+                                                                  </scg:List>
+                                                                </ueabf:BasicFilterArgument.BasicFilters>
+                                                              </ueabf:BasicFilterArgument>
+                                                            </ueabf:FilterArgument.BasicFiltersArgument>
+                                                          </ueabf:FilterArgument>
+                                                        </ueab:FilterX.FilterArgument>
+                                                        <ueab:FilterX.Range>
+                                                          <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                            <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                          </InArgument>
+                                                        </ueab:FilterX.Range>
+                                                      </ueab:FilterX>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="502,9705" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                        <Sequence.Variables>
+                                                          <Variable x:TypeArguments="x:Int32" Name="FirstRowIndex" />
+                                                          <Variable x:TypeArguments="x:Int32" Name="LastRowIndex" />
+                                                          <Variable x:TypeArguments="x:Int32" Name="LastRowIndex2" />
+                                                        </Sequence.Variables>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ueab:DeleteColumnX ColumnName="SaTy" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Item" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_2">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="SOrg." DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_3">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Matl Group" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_4">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="DChl" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_14">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Sold-To" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_5">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Sold-To Party" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_6">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Ship-To" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_7">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Ship-to party name" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_8">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Language" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_9">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="MTyp" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_10">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Material Name" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_11">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Manufacturer Part No" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_12">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Country Of Origin 1" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_13">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Plant Buffer 2" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_16">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Deliv. date" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_17">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="SU" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_18">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Net Price" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_19">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Curr." DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_20">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="per" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_21">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="SLNo" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_22">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Created by" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_24">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Created on" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_25">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="SU" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_26">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">Excel.Sheet["Sheet1"].Range["H1:H1000"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Total value delivered" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_27">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Curr." DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_28">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Related DO" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_30">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Open Delivery Amount" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_23">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Curr." DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_31">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="拒" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_32">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Grouping WBS el." DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_33">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="采购主档单价" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_34">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="币种" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_35">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="条件单位" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_36">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="MovAvgPrice" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_37">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Crcy" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_38">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="条件单位" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_39">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="DQ ex.rate" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_40">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="销售订单汇率" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_41">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="Vendor" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_42">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:DeleteColumnX ColumnName="默认供应商名称" DisplayName=" Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,192" sap2010:WorkflowViewState.IdRef="DeleteColumnX_43">
+                                                          <ueab:DeleteColumnX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">Excel.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteColumnX.Range>
+                                                        </ueab:DeleteColumnX>
+                                                        <ueab:FindFirstLastDataRowX BlankRowsToSkip="1" ColumnName="未清数量" ConfigureLastRowAs="LastPopulatedRow" DisplayName="Find First/Last Data Row" FirstRowOffset="0" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,340" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_1" LastRowOffset="0" VisibleRowsOnly="False">
+                                                          <ueab:FindFirstLastDataRowX.FirstRowIndex>
+                                                            <OutArgument x:TypeArguments="x:Int32">
+                                                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">FirstRowIndex</CSharpReference>
+                                                            </OutArgument>
+                                                          </ueab:FindFirstLastDataRowX.FirstRowIndex>
+                                                          <ueab:FindFirstLastDataRowX.LastRowIndex>
+                                                            <OutArgument x:TypeArguments="x:Int32">
+                                                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">LastRowIndex</CSharpReference>
+                                                            </OutArgument>
+                                                          </ueab:FindFirstLastDataRowX.LastRowIndex>
+                                                          <ueab:FindFirstLastDataRowX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">Excel.Sheet["Sheet1"].Range["H1:H10000"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:FindFirstLastDataRowX.Range>
+                                                        </ueab:FindFirstLastDataRowX>
+                                                        <ueab:FilterX ClearFilter="False" ColumnName="未清数量" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,201" sap2010:WorkflowViewState.IdRef="FilterX_5">
+                                                          <ueab:FilterX.FilterArgument>
+                                                            <ueabf:FilterArgument Mode="Advanced">
+                                                              <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                                <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                                                  <ueabf:AdvancedFilterArgument.Condition1>
+                                                                    <ueabf:AdvancedFilterCondition Operator="NOTEQ" Value="0" />
+                                                                  </ueabf:AdvancedFilterArgument.Condition1>
+                                                                  <ueabf:AdvancedFilterArgument.Condition2>
+                                                                    <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                                  </ueabf:AdvancedFilterArgument.Condition2>
+                                                                </ueabf:AdvancedFilterArgument>
+                                                              </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                              <ueabf:FilterArgument.BasicFiltersArgument>
+                                                                <ueabf:BasicFilterArgument>
+                                                                  <ueabf:BasicFilterArgument.BasicFilters>
+                                                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                                      <InArgument x:TypeArguments="x:String">0</InArgument>
+                                                                    </scg:List>
+                                                                  </ueabf:BasicFilterArgument.BasicFilters>
+                                                                </ueabf:BasicFilterArgument>
+                                                              </ueabf:FilterArgument.BasicFiltersArgument>
+                                                            </ueabf:FilterArgument>
+                                                          </ueab:FilterX.FilterArgument>
+                                                          <ueab:FilterX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">Excel.Sheet["Sheet1"].Range["H1:H10000"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:FilterX.Range>
+                                                        </ueab:FilterX>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="439,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">
+                                                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">LastRowIndex2</CSharpReference>
+                                                            </OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">
+                                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">LastRowIndex +1</CSharpValue>
+                                                            </InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439,191" sap2010:WorkflowViewState.IdRef="WriteCellX_1">
+                                                          <ueab:WriteCellX.Cell>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">Excel.Sheet["Sheet1"].Cell["H"+LastRowIndex2]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:WriteCellX.Cell>
+                                                          <ueab:WriteCellX.Value>
+                                                            <InArgument x:TypeArguments="x:Object">
+                                                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">"=SUBTOTAL(9,H2:H"+LastRowIndex+")"</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:WriteCellX.Value>
+                                                        </ueab:WriteCellX>
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="439,175" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                                                          <ui:LogMessage.Message>
+                                                            <InArgument x:TypeArguments="x:Object">
+                                                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">FirstRowIndex +"||"+LastRowIndex</CSharpValue>
+                                                            </InArgument>
+                                                          </ui:LogMessage.Message>
+                                                        </ui:LogMessage>
+                                                        <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="439,170" sap2010:WorkflowViewState.IdRef="FormatRangeX_1">
+                                                          <ueab:FormatRangeX.Alignment>
+                                                            <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+                                                          </ueab:FormatRangeX.Alignment>
+                                                          <ueab:FormatRangeX.Font>
+                                                            <ui:FontOptions Color="Black" FillColor="Gold" FontFamilyName="Calibri" Size="11" Style="Bold" UnderlineStyle="None" />
+                                                          </ueab:FormatRangeX.Font>
+                                                          <ueab:FormatRangeX.Format>
+                                                            <ueab:GeneralFormat />
+                                                          </ueab:FormatRangeX.Format>
+                                                          <ueab:FormatRangeX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">Excel.Sheet["Sheet1"].Range["H1:H1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:FormatRangeX.Range>
+                                                        </ueab:FormatRangeX>
+                                                        <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="439,170" sap2010:WorkflowViewState.IdRef="FormatRangeX_2">
+                                                          <ueab:FormatRangeX.Alignment>
+                                                            <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+                                                          </ueab:FormatRangeX.Alignment>
+                                                          <ueab:FormatRangeX.Font>
+                                                            <ui:FontOptions Color="Black" FillColor="LawnGreen" FontFamilyName="Calibri" Size="11" Style="Bold" UnderlineStyle="None" />
+                                                          </ueab:FormatRangeX.Font>
+                                                          <ueab:FormatRangeX.Format>
+                                                            <ueab:GeneralFormat />
+                                                          </ueab:FormatRangeX.Format>
+                                                          <ueab:FormatRangeX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">Excel.Sheet["Sheet1"].Range["H"+LastRowIndex2+":H"+LastRowIndex2]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:FormatRangeX.Range>
+                                                        </ueab:FormatRangeX>
+                                                        <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="439,148" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Rows="True">
+                                                          <ueab:AutoFitX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">Excel.Sheet["Sheet1"].Range["A1:AB"+LastRowIndex2]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:AutoFitX.Range>
+                                                        </ueab:AutoFitX>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="439,241" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="02706374-a1f7-4348-9fc2-8ebdf5d636c6" Text="/nZSUSD026[k(Enter)]" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable ContentHash="j5LXOkfqxkGKhbBBuRYlhw" DesignTimeRectangle="62, 51, 142, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="a54f0603-2f2f-47b6-9efb-9d92d96896bf" InformativeScreenshot="8354faae91fa3f638af84ada2a85dcdf.png" Reference="dcJtd2nba0mn3vCcE5zLxA/gxz_9dE1Y0OFSJT7INZbGg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                                          </uix:NTypeInto.Target>
+                                                        </uix:NTypeInto>
+                                                      </Sequence>
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ueab:ExcelApplicationCard.Body>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:ExcelApplicationCard.WorkbookPath>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">"From SAP\\"+WBS+".XLSX"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:ExcelApplicationCard.WorkbookPath>
+                                              </ueab:ExcelApplicationCard>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ueab:ExcelProcessScopeX.Body>
+                                      </ueab:ExcelProcessScopeX>
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                              <ueab:ExcelForEachRowX.Range>
+                                <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                  <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Excel.Sheet["Sheet1"].Range["B2:B15"]</CSharpValue>
+                                </InArgument>
+                              </ueab:ExcelForEachRowX.Range>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NSAPLogon.Body>
+      <uix:NSAPLogon.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" Arguments="0203_S4_ProductionSystem on AWS" FilePath="C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPGUI\\saplogon.exe" Version="V2" />
+      </uix:NSAPLogon.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NSAPLogon>
+  </Sequence>
+</Activity>

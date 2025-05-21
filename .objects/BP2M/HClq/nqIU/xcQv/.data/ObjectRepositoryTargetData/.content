@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="moea2kocpkmQZb9b12Pt1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="36f6ad01-7631-4723-a16b-a487982bb82c" CvTextArea="27, 209, 81, 15" CvTextArgument="Spreadsheet.." CvType="Text" DesignTimeRectangle="3, 205, 184, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='14' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='14' role='menu item' check:text='Spreadsheet...' /&gt;" Guid="fce2197c-7de0-4351-bdb9-fef7aef4f2f6" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c17b41209e217db7d610b15ae90cc366.png" xmlns="">0i8C6BnZnEkuLL7szptbyww</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

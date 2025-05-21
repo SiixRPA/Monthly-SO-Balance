@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SAP Logon 800",
+  "Type": "Screen",
+  "Id": "jkbbW7B4lkCVPtBxM-yRgg",
+  "Reference": "dcJtd2nba0mn3vCcE5zLxA/jkbbW7B4lkCVPtBxM-yRgg",
+  "ParentRef": "dcJtd2nba0mn3vCcE5zLxA/HClqcjDLlk2Jtn0rvp1GfA",
+  "Created": "2025-01-29T10:49:17.5887128Z",
+  "Updated": "2025-01-29T10:49:17.5887128Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-smeygB2d0WHHXvJ1dZwYw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="187, 238, 38, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;sap colName='VKORG' id='usr/cntlCONTAINER/shellcont/shell' tableRow='18' /&gt;" Guid="a5a9b4f0-16d4-47d8-8b06-4fb9ac89f90c" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SO balance information' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0056bb40461b7f39f0a85c84ccf941e7.png" xmlns="">09ed6qCdn8UyfUjXnx9gQBg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

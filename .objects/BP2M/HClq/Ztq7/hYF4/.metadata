@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Replace",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "hYF4Ce1Iq065BBvzzi93mA",
+  "Reference": "dcJtd2nba0mn3vCcE5zLxA/hYF4Ce1Iq065BBvzzi93mA",
+  "ParentRef": "dcJtd2nba0mn3vCcE5zLxA/Ztq7kIMy0UqkjD9wrEtXgQ",
+  "Created": "2025-01-30T02:37:51.1208286Z",
+  "Updated": "2025-01-30T02:37:51.1208286Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

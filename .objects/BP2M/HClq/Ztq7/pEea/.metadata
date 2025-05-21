@@ -1,0 +1,14 @@
+﻿{
+  "Name": "EXPORT_20250130_113051.…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "pEeaA3Vo6kuK6eAexLy_uw",
+  "Reference": "dcJtd2nba0mn3vCcE5zLxA/pEeaA3Vo6kuK6eAexLy_uw",
+  "ParentRef": "dcJtd2nba0mn3vCcE5zLxA/Ztq7kIMy0UqkjD9wrEtXgQ",
+  "Created": "2025-01-30T02:33:05.6981632Z",
+  "Updated": "2025-01-30T02:33:05.6981632Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
